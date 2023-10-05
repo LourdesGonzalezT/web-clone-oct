@@ -84,7 +84,7 @@ header img {
     padding-left: 45px;
     border-radius: 5px;
     font-family: "Karla-Bold";
-        font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 
@@ -95,7 +95,7 @@ header img {
     margin-top: 17px;
     z-index: 1;
     color: black;
-        font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 .container-1 input#search:hover,
@@ -198,8 +198,8 @@ header img {
 
 .section3 {
     display: flex;
-        flex-direction: column;
-        position: relative;
+    flex-direction: column;
+    position: relative;
     background-color: black;
     color: white;
 }
@@ -312,11 +312,11 @@ header img {
 .sect5-art {
     background-color: white;
     width: 28%;
-        height: 58%;
+    height: 58%;
     padding: 2%;
     border-radius: 25px 25px 25px 0;
-        padding: 7%;
-    }
+    padding: 7%;
+}
 
 .sect5-art h2 {
     font-size: 3.8em;
@@ -331,6 +331,7 @@ header img {
     text-align: left;
     padding-right: 4%;
 }
+
 /* Footer*/
 footer {
     display: flex;
