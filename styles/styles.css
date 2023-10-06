@@ -43,8 +43,9 @@ header {
     justify-content: space-between;
     padding: 1%;
     position: fixed;
-        background-color: white;
-        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
 }
 
 .home {
@@ -111,12 +112,11 @@ header img {
     background: #ffffff;
 }
 
-
 /* Main*/
-
 main {
     padding-top: 5%;
 }
+
 /* Main-Section1*/
 
 .section1 h2 {
@@ -139,7 +139,7 @@ main {
     align-items: center;
     background-color: #E2AE27;
     justify-content: center;
-        width: 100%;
+    width: 100%;
 }
 
 .sect1-art1-text {
@@ -147,8 +147,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-        align-items: center;
-        padding: 5%;
+    align-items: center;
+    padding: 5%;
 }
 
 .sect1-art1 img {
@@ -164,12 +164,13 @@ main {
     object-fit: cover;
     object-position: bottom center;
 }
+
 .sect1-art2 {
     display: flex;
     align-items: center;
     background-color: #EB5252;
     justify-content: center;
-        width: 100%;
+    width: 100%;
 }
 
 .sect1-art2-text {
@@ -177,8 +178,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-        align-items: center;
-        padding: 5%;
+    align-items: center;
+    padding: 5%;
 }
 
 
@@ -244,7 +245,7 @@ main {
 .section3 {
     display: flex;
     flex-direction: column;
-        position: relative;
+    position: relative;
     background-color: black;
     color: white;
 }
@@ -294,8 +295,9 @@ main {
 
 /* Main-Section4*/
 .section4 {
-    padding: 2% 0;
+    padding: 2% 0%;
 }
+
 .section4 h2 {
     font-size: 3em;
     text-align: center;
@@ -306,8 +308,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-        width: 90;
-        padding: 1% 8%
+    width: 100%;
+    padding: 1% 8%
 }
 
 .div-sect4-art {
@@ -336,7 +338,7 @@ main {
     background-color: #41E227;
     border-radius: 5px;
     border: none;
-    width: 80%;
+    width: 90%;
 }
 
 .btn-sect4 span {
@@ -347,6 +349,8 @@ main {
 
 .btn-sect4 img {
     width: 30px;
+    border-radius: 0px;
+    box-shadow: none 
 }
 
 /* Main-Section5*/
@@ -366,7 +370,7 @@ main {
     border-radius: 25px 25px 25px 0;
     padding: 7%;
     height: auto;
-        position: absolute;
+    position: absolute;
 }
 
 .sect5-art h2 {
@@ -473,44 +477,80 @@ footer {
     margin-right: 30px;
 }
 
-
-/* @media screen and (max-width:1350px) {}
-
-@media screen and (max-width:800px) {}
-
-@media screen and (max-width:625px) {} */
 /* Estilos tablet */
+
 @media (max-width:920px) {
     body {
         background-color: aqua;
+    }
+
+    .section2 h1 {
+        text-align: center;
+        font-size: 3em;
+        line-height: 5px;
+        padding-top: 5%;
+    }
+
+    .sect2-art p {
+        text-align: center;
+        font-size: 1em;
+        padding: 1%;
+    }
+
+    .section2 img {
+        width: 100px;
+    }
+
+    .sect2-art h2 {
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    .div-sect4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1%;
+    }
+
+    .div-sect4-art {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .div-sect4-art h3 {
+        font-size: 1em;
+    }
+    
+    .btn-sect4 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #41E227;
+        border-radius: 5px;
+        border: none;
+        width: 50%;
+    }
+    
+    .btn-sect4 span {
+        font-family: "Just-Regular";
+        font-size: 2em;
+        font-weight: 100;
+    }
+    
+    .btn-sect4 img {
+        width: 20px;
+
+
 }
-
-.section2 h1 {
-    text-align: center;
-    font-size: 3em;
-}
-
-.section2 p {
-    text-align: center;
-    font-size: 1em;
-    padding: 1%;
-}
-
-.section2 img {
-    width: 100px;
-}
-
-.sect2-art h2 {
-    font-size: 2em;
-    text-align: center;
-}
-
-
 }
 /* Estilos movil */
 @media (max-width:680px) {
     body {
-        background-color: rgb(184, 99, 201);
+        background-color: rgb(232, 149, 243);
     }
 
     .sect1-art1 {
@@ -536,22 +576,112 @@ footer {
         flex-direction: column;
     }
 
+    .sect2-art p {
+        text-align: center;
+        font-size: 1.5em;
+        padding: 1%;
+    }
+
+    .section2 img {
+        width: 100px;
+    }
+
+    .sect2-art h2 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .sect3-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sect3-images img {
+        width: 50%;
+        border-radius: 100%;
+        border: 3px solid white;
+        margin-bottom: 5%;
+    }
+
+    .sect3-art {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sect3-art-text h2 {
+        font-size: 3em;
+        line-height: 40px;
+        padding-bottom: 3%;
+    }
+    .sect3-art-text {
+        width: 90%;
+    }
+
+    .sect3-art-text p {
+        font-size: 1.2em;
+        font-weight: 100;
+    }
+
+    .sect3-art img {
+        width: 40%;
+        padding: 5%;
+    }
+
 }
 
-.section2 p {
-    text-align: center;
+/*
+
+
+
+
+.div-sect4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90;
+    padding: 1% 8%
+}
+
+.div-sect4-art {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-sect4-art img {
+    width: 90%;
+    border-radius: 100%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.div-sect4-art h3 {
     font-size: 1.5em;
-    padding: 1%;
-}
-
-.section2 img {
-    width: 100px;
-}
-
-.sect2-art h2 {
-    font-size: 2em;
     text-align: center;
+    padding: 5% 0;
 }
 
-
+.btn-sect4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #41E227;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
 }
+
+.btn-sect4 span {
+    font-family: "Just-Regular";
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+.btn-sect4 img {
+    width: 30px;
+}*/
