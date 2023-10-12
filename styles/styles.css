@@ -217,8 +217,10 @@ main {
     padding-bottom: 7%;
     transition: 2s;
 }
-.section2 img:hover{
+
+.section2 img:hover {
     transform: rotatey(180deg);
+    cursor: pointer;
 }
 
 .sect2-art h2 {
@@ -299,7 +301,7 @@ main {
     width: 15%;
 }
 
-.sect3-images img:hover{
+.sect3-images img:hover {
     border-radius: 3%;
     border: 5px solid rgb(255, 238, 0);
     transform: scale(1.2);
@@ -307,18 +309,18 @@ main {
 
 /* ghost animation Section3*/
 
-.sect3-art img:hover{
-    cursor:pointer;
+.sect3-art img:hover {
+    cursor: pointer;
     position: center;
     justify-content: center;
     align-items: center;
     display: flex;
     animation: float 5s infinite alternate ease-in-out;
-   
+
 }
 
-.sect3-art img:active{
-    cursor:pointer;
+.sect3-art img:active {
+    cursor: pointer;
     position: center;
     justify-content: center;
     align-items: center;
@@ -328,18 +330,23 @@ main {
     border-radius: 40%;
 }
 
-@keyframes float{
-    0%, 100% {
+@keyframes float {
+
+    0%,
+    100% {
         transform: translateY(0) translateX(0);
     }
+
     25% {
-        transform: translateY(-10%) translateX(10%); 
+        transform: translateY(-10%) translateX(10%);
     }
+
     50% {
-        transform: translateY(0) translateX(-10%); 
+        transform: translateY(0) translateX(-10%);
     }
+
     75% {
-        transform: translateY(-10%) translateX(10%); 
+        transform: translateY(-10%) translateX(10%);
     }
 }
 
@@ -405,7 +412,7 @@ main {
     box-shadow: none
 }
 
-.div-sect4-art:hover{
+.div-sect4-art:hover {
     border-radius: 3%;
     transform: scale(1.1);
     filter: brightness(1.2) saturate(1.2);
@@ -413,17 +420,17 @@ main {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.div-sect4-art:hover h3{
-   color: #EB5252;
+.div-sect4-art:hover h3 {
+    color: #EB5252;
 }
 
 
-.btn-sect4:hover img{
+.btn-sect4:hover img {
     border-radius: 2%;
 }
 
-.div-sect4-art:hover .btn-sect4 img{
-    filter:invert(100%);
+.div-sect4-art:hover .btn-sect4 img {
+    filter: invert(100%);
 }
 
 .div-sect4-art:hover .btn-sect4 {
@@ -488,7 +495,6 @@ footer {
     width: 150px;
 }
 
-
 .footer-black-list ul {
     display: flex;
     flex-direction: column;
@@ -520,6 +526,25 @@ footer {
     color: #E2AE27;
 }
 
+.green:hover {
+    color: black;
+    background-color: #41E227;
+    padding: 0;
+}
+
+.red:hover {
+    color: black;
+    background-color: #EB5252;
+    padding: 0;
+}
+
+.yellow:hover {
+    color: black;
+    background-color: #E2AE27;
+    padding: 0;
+}
+
+
 .hr-red {
     height: 50%;
     border-color: #EB5252;
@@ -536,7 +561,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .footer-white h3 {
@@ -552,10 +576,16 @@ footer {
 }
 
 .social-media img {
-   width: 90%;
+    width: 90%;
 }
 
-.whatsapp{
+.social-media img:hover {
+    width: 120%;
+    background-color: #41E227;
+    border-radius: 40%;
+}
+
+.whatsapp {
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -564,7 +594,7 @@ footer {
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.animation-whats{
+.animation-whats {
     animation-name: whatssapp-logo;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
@@ -572,21 +602,21 @@ footer {
 }
 
 
-@keyframes whatssapp-logo{
-    0%{
+@keyframes whatssapp-logo {
+    0% {
         transform: scale(1);
     }
 
-    50%{
+    50% {
         transform: scale(4);
     }
 
-    100%{
+    100% {
         transform: scale(1);
     }
 }
 
-.animation-whats:hover{
+.animation-whats:hover {
     filter: grayscale(1);
     animation-name: whatssapp-mov;
     animation-duration: 2s;
@@ -595,14 +625,14 @@ footer {
     /* animation-delay: 5s; */
 }
 
-@keyframes whatssapp-mov{
-    50%{
+@keyframes whatssapp-mov {
+    50% {
         transform: rotateY(180deg);
     }
 }
 
-.animation-whats:active{
-   
+.animation-whats:active {
+
     animation-name: whatssapp-act;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
@@ -611,10 +641,10 @@ footer {
 }
 
 
-@keyframes whatssapp-act{
-  
-    50%{
-        transform:  rotateY('360deg') 
+@keyframes whatssapp-act {
+
+    50% {
+        transform: rotateY('360deg')
     }
 }
 
@@ -727,10 +757,11 @@ footer {
     body {
         background-color: rgb(232, 149, 243);
     }
+
     .section1 h2 {
         font-size: 2.5em;
         padding-bottom: 3%;
-        margin-top:8vh;
+        margin-top: 8vh;
     }
 
     .sect1-art1 {
@@ -751,11 +782,12 @@ footer {
         background-color: #EB5252;
     }
 
-    .section2 h1{
-      text-align:center;
-      font-size: 3em;
-      line-height: normal;
+    .section2 h1 {
+        text-align: center;
+        font-size: 3em;
+        line-height: normal;
     }
+
     .sect2-container {
         display: flex;
         flex-direction: column;
@@ -819,10 +851,11 @@ footer {
         padding: 5%;
     }
 
-    .div-sect4{
+    .div-sect4 {
         display: flex;
         flex-direction: column;
     }
+
     .div-sect4-art img {
         width: 100%;
     }
