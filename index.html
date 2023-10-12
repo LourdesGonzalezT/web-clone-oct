@@ -2,19 +2,54 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba31</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<<<<<<< Updated upstream
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="styles/styles-menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/leaf-icon.png" type="image/x-icon">
+>>>>>>> Stashed changes
 
 </head>
 
 <body>
     <header>
-
         <div class="home">
             <a href="#"><img src="/img/leaf-icon.png" alt="leaf-icon">
+            </a>
+        </div>
+
+        <div class="search-box">
+            <div class="container-1">
+                <span class="icon"><i class="fa fa-search"></i></span><input type="search" id="search"
+                    placeholder="¿Qué buscas?" />
+
+            </div>
+        </div>
+
+        <nav>
+            <ul class="menu">
+              <li class="item"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+              <li class="item"><a href="#"><i class="fas fa-leaf"></i> About</a></li>
+              <li class="item"><a href="#"><i class="fas fa-apple-alt"></i> Blog</a></li>
+              <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+      
+        <!-- <nav>
+            <a href="#"><img src="img/user-icon.png" alt="user-icon"></a>
+            <a href="./gallery.html"><img src="img/menu-icon.png" alt="menu-icon"></a>
+        </nav> -->
+
+        <!-- <div class="home">
+            <a href="gallery.html"><img src="img/leaf-icon.png" alt="leaf-icon">
             </a>
         </div>
         <div class="search-box">
@@ -25,9 +60,15 @@
             </div>
         </div>
         <nav>
+<<<<<<< Updated upstream
             <a href="#"><img src="/img/user-icon.png" alt="user-icon"></a>
             <a href="#"><img src="/img/menu-icon.png" alt="menu-icon"></a>
         </nav>
+=======
+            <a href="#"><img src="img/user-icon.png" alt="user-icon"></a>
+            <a href="./gallery.html"><img src="img/menu-icon.png" alt="menu-icon"></a>
+        </nav> -->
+>>>>>>> Stashed changes
 
     </header>
 
@@ -111,7 +152,8 @@
                         reality.</p>
                 </div>
 
-                <img src="img/ghost-icon.png" alt="ghost-icon">
+                <img id="ghost" src="img/ghost-icon.png" alt="ghost-icon">
+                <audio id="sound" src="sound/ghost-sound.wav"></audio>
 
             </article>
         </section>
@@ -122,28 +164,36 @@
             <h2>Ignite your passion, let it blaze within.</h2>
             <div class="div-sect4">
                 <article class="div-sect4-art">
-                    <img src="img/stairs.png" alt="">
+                    <!-- <img src="img/stairs.png" alt=""> -->
+                    <a class="example-image-link" href="img/stairs.png" data-lightbox="example-1"><img class="example-image" src="img/stairs.png" alt="stairs" width="200px"/>
+                    </a>
                     <h3>Caring for Nature</h3>
                     <button class="btn-sect4">
                         <span>More power</span><img src="img/iconos botones/tree-vector.png" alt="tree-vector">
                     </button>
                 </article>
                 <article class="div-sect4-art">
-                    <img src="img/elephant.png" alt="elephant">
+                    <!-- <img src="img/elephant.png" alt="elephant"> -->
+                    <a class="example-image-link" href="img/elephant.png" data-lightbox="example-1"><img class="example-image" src="img/elephant.png" alt="elephant" width="200px"/>
+                    </a>
                     <h3>Flow with your energy</h3>
                     <button class="btn-sect4">
                         <span>More vision</span><img src="img/iconos botones/sun-vector.png" alt="tree-vector">
                     </button>
                 </article>
                 <article class="div-sect4-art">
-                    <img src="img/house.png" alt="house">
+                    <a class="example-image-link" href="img/house.png" data-lightbox="example-1"><img class="example-image" src="img/house.png" alt="house" width="200px"/>
+                    </a>
+                    <!-- <img src="img/house.png" alt="house"> -->
                     <h3>Caring for Nature</h3>
                     <button class="btn-sect4">
                         <span>More ideals</span><img src="img/iconos botones/rainbow-vector.png" alt="tree-vector">
                     </button>
                 </article>
                 <article class="div-sect4-art">
-                    <img src="img/sky.png" alt="">
+                    <a class="example-image-link" href="img/sky.png" data-lightbox="example-1"><img class="example-image" src="img/sky.png" alt="sky" width="200px"/>
+                    </a>
+                    <!-- <img src="img/sky.png" alt=""> -->
                     <h3>Release your emotions</h3>
                     <button class="btn-sect4">
                         <span>More beliefts</span><img src="img/iconos botones/plant-vector.png" alt="tree-vector">
@@ -219,6 +269,39 @@
         </div>
     </footer>
 
+    <a class="whatsapp" href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" 
+    target="_blank">
+    <i class="fa-brands fa-whatsapp fa-beat animation-whats" style="color: #25D366;"></i>
+</a>
+
 </body>
+<script>
+    ghost.addEventListener('click', function () {
+        // Reproduce el sonido
+        sound.play();
+    });
+</script>
+
+
+<script src="dist/js/lightbox-plus-jquery.min.js"></script>
+<!-- <script>
+    
+    document.addEventListener("DOMContentLoaded", function () {
+    var ghost = document.getElementById("ghost"); 
+    var sound = document.getElementById("sound");
+
+    if (ghost && sound) {
+        ghost.addEventListener('click', function () {
+            // Reproduce el sound
+            sound.play();
+        });
+    }
+});
+
+</script> -->
+
+
+<script src="dist/js/lightbox-plus-jquery.min.js"></script>
+<script src="scripts.js"></script>
 
 </html>

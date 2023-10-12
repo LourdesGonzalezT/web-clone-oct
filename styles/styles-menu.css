@@ -1,0 +1,184 @@
+
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  padding: 1%;
+  position: fixed;
+  background-color: white;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  color: black;
+}
+.home {
+  width: 30%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+header img {
+  height: 50px;
+  filter: brightness(0)
+}
+
+.search-box {
+  margin: 100px auto;
+  width: 30%;
+  height: 50px;
+}
+
+.container-1 {
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.container-1 input#search {
+  width: 100%;
+  height: 50px;
+  background: #949494;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: black;
+  padding-left: 45px;
+  border-radius: 5px;
+  font-family: "Karla-Bold";
+  font-size: 1.3em;
+}
+
+.container-1 .icon {
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: black;
+  font-size: 1.3em;
+}
+
+.container-1 input#search:hover,
+.container-1 input#search:focus,
+.container-1 input#search:active {
+  outline: none;
+  background: #666666;
+}
+
+nav {
+  background: #7456a1;
+  padding: 0 15px;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 5%;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item a:hover{
+  color: #ff3af8;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li a {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 5px;
+}
+
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+
+.toggle {
+  font-size: 30px;
+}
+
+.item {
+  order: 1;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.active .item {
+  display: block;
+}
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .toggle {
+    text-align: right;
+  }
+}
+
+
+
+
+@media all and (min-width: 960px) {
+
+.logo {
+  order: 0;
+}
+.item {
+  order: 1;
+  position: relative;
+  display: block;
+  width: auto;
+}
+
+.toggle {
+  display: none;
+}
+.submenu-active {
+  border-radius: 0;
+}
+}
