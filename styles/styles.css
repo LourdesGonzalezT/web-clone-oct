@@ -35,7 +35,7 @@ body p {
 
 /* Header*/
 
-header {
+/* header {
     display: flex;
     align-items: center;
     width: 100%;
@@ -110,7 +110,7 @@ header img {
 .container-1 input#search:active {
     outline: none;
     background: #ffffff;
-}
+} */
 
 /* Main*/
 main {

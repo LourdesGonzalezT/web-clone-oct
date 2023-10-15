@@ -1,4 +1,4 @@
-
+/* Basic styling */
 /* Basic styling */
 * {
   box-sizing: border-box;
@@ -6,7 +6,44 @@
   margin: 0;
 }
 
-header {
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+nav {
+  background: #6e14f5;
+  padding: 0 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  list-style-type: none;
+}
+
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+}
+
+.item {
+  padding: 10px;
+}
+
+.item a:hover {
+  color: #ff3af8;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+
+
+
+/*MI MENU*/
+/* header {
   display: flex;
   align-items: center;
   width: 100%;
@@ -17,12 +54,21 @@ header {
   background-color: white;
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  color: black;
 }
+
 .home {
   width: 30%;
   padding-left: 3%;
   padding-right: 3%;
+}
+
+nav {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 5%;
 }
 
 header img {
@@ -32,7 +78,7 @@ header img {
 
 .search-box {
   margin: 100px auto;
-  width: 30%;
+  width: 300px;
   height: 50px;
 }
 
@@ -43,9 +89,9 @@ header img {
 }
 
 .container-1 input#search {
-  width: 100%;
+  width: 300px;
   height: 50px;
-  background: #949494;
+  background: #E6E6E6;
   border: none;
   font-size: 10pt;
   float: left;
@@ -55,6 +101,7 @@ header img {
   font-family: "Karla-Bold";
   font-size: 1.3em;
 }
+
 
 .container-1 .icon {
   position: absolute;
@@ -70,41 +117,8 @@ header img {
 .container-1 input#search:focus,
 .container-1 input#search:active {
   outline: none;
-  background: #666666;
-}
-
-nav {
-  background: #7456a1;
-  padding: 0 15px;
-  height: 100%;
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding-right: 5%;
-}
-
-.menu{
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-}
-
-.menu a{
-  text-decoration: none;
-  color: black;
-  font-size: 1.5em;
-}
-
-.item {
-  padding: 10px;
-}
-
-.item a:hover{
-  color: #ff3af8;
-  background-color: antiquewhite;
-  border-radius: 5px;
-}
+  background: #ffffff;
+} */
 
 /* Mobile menu */
 .menu {
@@ -114,19 +128,6 @@ nav {
   align-items: center;
 }
 
-.menu li a {
-  display: flex;
-  flex-direction: column;
-  padding: 15px 5px;
-}
-
-
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
 .menu li a {
   display: block;
   padding: 15px 5px;
@@ -152,17 +153,18 @@ nav {
   .menu {
     justify-content: center;
   }
+
   .logo {
     flex: 1;
   }
+
   .toggle {
     text-align: right;
   }
 }
 
-
-
-
+/* Si quitamos la parte del menu se queda con la hamburguesa*/
+/* Desktop menu 
 @media all and (min-width: 960px) {
 
 .logo {
@@ -181,4 +183,4 @@ nav {
 .submenu-active {
   border-radius: 0;
 }
-}
+}*/

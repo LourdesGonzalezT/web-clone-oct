@@ -163,6 +163,12 @@ main {
     padding: 3%;
 }
 
+.sect1-art1 img:hover {
+    transform: rotateX(180deg);
+    transition: 4s;
+    cursor: pointer;
+}
+
 /* Main-Section2*/
 
 .section2 h1 {
@@ -556,6 +562,18 @@ footer {
 @media (max-width:920px) {
     body {
         background-color: aqua;
+    }
+
+    .section2 h1 {
+        font-size: 4em;
+    }
+
+    .sect2-art:hover {
+        border-radius: 3%;
+        transform: scale(1.1);
+        filter: brightness(1.7) saturate(1.2);
+        background-color: #41E227;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     }
 
     .sect3-img img {
