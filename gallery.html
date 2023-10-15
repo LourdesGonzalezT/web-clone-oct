@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/styles-gallery.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="shortcut icon" href="img/leaf-icon.png" type="image/x-icon">
 
 
@@ -63,8 +64,8 @@
                     <a class="example-image-link" href="img/landscape-mountains.png" data-lightbox="example-1">
                         <h3>Release your emotions</h3>
                     </a>
-
                 </article>
+
                 <article class="sect2-art">
                     <a class="example-image-link" href="img/radio.png" data-lightbox="example-1"><img
                             src="img/radio.png" alt="radio">
@@ -125,8 +126,10 @@
                         grounding reality</p>
                 </div>
                 <div class="sect3-img">
-                    <img src="img/ghost-icon.png" alt="ghost-icon">
+                    <img id="ghost" src="img/ghost-icon.png" alt="ghost-icon">
+                    <audio id="sound" src="sound/ghost-sound.wav"></audio>
                 </div>
+            </div>
         </section>
         <div class="tilt-bottom"></div>
 
@@ -136,11 +139,22 @@
                     <h1>Subscribe now</h1>
                     <h2>a daily dose of inspiration and knowledge.</h2>
                     <div class="form-group">
-                        <label for="nombre">Nombre:</label>
+                        <label for="nombre">
+                            <div class="div-label">
+                                <img class="img-form" src="img/user-icon.png" alt="user-icon">
+                                <h3>name</h3>
+                            </div>
+                        </label>
                         <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
                     </div>
+
                     <div class="form-group">
-                        <label for="email">Correo Electrónico:</label>
+                        <label for="email">
+                            <div class="div-label">
+                                <img class="img-form" src="img/email.png" alt="email">
+                                <h3>email</h3>
+                            </div>
+                        </label>
                         <input type="email" id="email" name="email" required placeholder="Escribe tu email">
                     </div>
 
@@ -190,7 +204,9 @@
 
         </div>
         <div class="footer-white">
+
             <h3>Breathe in the wisdom 2023</h3>
+
             <div class="social-media">
                 <a href="#"><img src="img/instagram-icon.png" alt="instagram-icon"></a>
                 <a href="#"><img src="img/facebook-icon.png" alt="facebook-icon"></a>
@@ -203,6 +219,12 @@
 
 </body>
 
+<script>
+    ghost.addEventListener('click', function () {
+        // Reproduce el sonido
+        sound.play();
+    });
+</script>
 <script src="dist/js/lightbox-plus-jquery.min.js"></script>
 
 </html>
